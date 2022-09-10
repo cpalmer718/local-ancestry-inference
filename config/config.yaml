@@ -1,0 +1,4 @@
+manifest: config/manifest.tsv
+queue:
+  small_partition: "partition1"
+  large_partition: "partition2"

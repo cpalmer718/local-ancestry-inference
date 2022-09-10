@@ -1,0 +1,21 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+description: "local-ancestry-inference/snakemake configuration file"
+
+type: object
+properties:
+  manifest:
+    type: string
+  queue:
+    type: object
+    properties:
+      small_partition:
+        type: string
+      large_partition:
+        type: string
+    required:
+      - small_partition
+      - large_partition
+required:
+  - manifest
+  - queue
+additionalProperties: no
